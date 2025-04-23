@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* box-sizing: border-box; */
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+body {
+  
+  color: #fff;
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 0;
+  }
+}
+
+.container {
+  /* outline: red dashed 1px; */
+  position: relative;
+  overflow: hidden;
+  border-radius: 7rem;
+  /* height: 100%;
+  width: 100%; */
+  width: 100vw; /* Set width to 100% of the viewport width */
+  height: 100vh;
+  display: flex;
+  width: 500%;
+  height: 70rem;
+  /* transition: all 0.25s ease-in;
+  transform: translateX(90); */
+  top:0;
+  left:0;
+  right:0;
+  margin-top: 0;
+  padding-top: 0;
+  padding-right: 0;
+  margin-right: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  
+  
+}

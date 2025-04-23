@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+   
+</head>
+
+<body>
+        <div  *ngIf="videos && videos.length > 0">
+            <div class="featured-content"
+                
+                style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('../../assets/img/f-2.jpg'); border-radius: 50px;">
+                <h1 style="color:whitesmoke;">Game of thrones</h1>
+                <img class="featured-title" src="../../assets/img/f-t-2.png" alt="">
+                <p class="featured-desc">Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.</p>
+                <button class="featured-button"><a routerLink="vplayer/{{videos[9].title}}">Watch Now</a></button>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Best of all times</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/21.jpg" alt="">
+                            <span class="movie-list-item-title">The dark knight</span>
+                            <button class="movie-list-item-button"><a routerLink="vplayer/{{videos[5].title}}">Watch Now</a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/15.jpg" alt="">
+                            <span class="movie-list-item-title">Pushpa</span>
+                            <button class="movie-list-item-button"><a routerLink="">Watch Now</a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/20.jpg" alt="">
+                            <span class="movie-list-item-title">Inception</span>
+                            <button class="movie-list-item-button"><a routerLink="vplayer/{{videos[6].title}}">Watch Now</a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/22.jpg" alt="">
+                            <span class="movie-list-item-title">Interstellar</span> 
+                            <button class="movie-list-item-button"><a routerLink="vplayer/{{videos[7].title}}">Watch Now</a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/23.jpg" alt="">
+                            <span class="movie-list-item-title">Titanic</span>
+                            <button class="movie-list-item-button"><a routerLink="vplayer/{{videos[8].title}}">Watch Now</a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/24.jpg" alt="">
+                            <span class="movie-list-item-title">The Exorcist</span>
+                            <button class="movie-list-item-button"><a routerLink="vplayer/{{videos[10].title}}">Watch Now</a></button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+            <div class="movie-list-container">
+                <h1 class="movie-list-title">Drama</h1>
+                <div class="movie-list-wrapper">
+                    <div class="movie-list">
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/17.jpg" alt="">
+                            <span class="movie-list-item-title">Shamshera</span>
+                            <button class="movie-list-item-button">Watch Now</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/18.jpg" alt="">
+                            <span class="movie-list-item-title">1899</span>
+                            <button class="movie-list-item-button"><a routerLink="vplayer/{{videos[11].title}}">Watch Now</a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/19.jpg" alt="">
+                            <span class="movie-list-item-title">Money Heist</span>
+                            <button class="movie-list-item-button"><a routerLink="vplayer/{{videos[12].title}}">Watch Now</a></button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/25.jpg" alt="">
+                            <span class="movie-list-item-title">Peaky Blinders</span>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/26.jpg" alt="">
+                            <span class="movie-list-item-title">Sherlock</span>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/27.jpg" alt="">
+                            <span class="movie-list-item-title">Friends</span>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                        <div class="movie-list-item">
+                            <img class="movie-list-item-img" src="../../assets/img/28.jpg" alt="">
+                            <span class="movie-list-item-title">Breaking Bad</span>
+                            <button class="movie-list-item-button">Watch</button>
+                        </div>
+                    </div>
+                    <i class="fas fa-chevron-right arrow"></i>
+                </div>
+            </div>
+        </div>
+    
+</body>
+
+</html>
