@@ -1,0 +1,51 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-error.log*
+
+# Build output
+dist/
+tmp/
+out-tsc/
+.bazel-out/
+
+# Angular cache
+.angular/cache/
+
+# Logs
+*.log
+
+# IDEs and editors
+.idea/
+.vscode/
+.history/
+*.sublime-workspace
+*.sublime-project
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+.sass-cache/
+connect.lock
+coverage/
+libpeerconnection.log
+testem.log
+typings/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# Environment files
+.env
+.env.*
+
+
+# Ignore backend node_modules and build output
+back/node_modules/
+back/*.log
+back/dist/
+back/.env
